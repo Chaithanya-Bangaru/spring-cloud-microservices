@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Title: microservices-spring-cloud-registry-and-discover
+ y-eureka-server
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: rbangaru
+Implementation-Vendor-Id: tech.bangaru
+Build-Jdk: 1.8.0_191
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/java-microservices-spring-cloud-registry-discovery-
+ eureka
+Created-By: Maven Integration for Eclipse
+
