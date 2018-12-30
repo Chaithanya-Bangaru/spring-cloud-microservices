@@ -13,14 +13,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class MicroservicesSpringCloudHystrixCallleeClientApplication {
 
 	
-	@RequestMapping("/getIvaansParentsNames")
+	@RequestMapping("/getIvaansFamilyNames")
 	public List<String> getStringList(){
-		return Arrays.asList("Raja", "Shobha");
+		return Arrays.asList("Raja", "Shobha","Ivaan");
 	}
 	
-	@RequestMapping("/getIvaansParentsStrings")
+	@RequestMapping("/getIvaansFamilyNamesStrings")
 	public String getStrings(){
-		return String.join(",", Arrays.asList("Raja", "Shobha"));
+		return String.join(",", Arrays.asList("Raja", "Shobha","Ivaan"));
 	}
 	public static void main(String[] args) {
 		SpringApplication.run(MicroservicesSpringCloudHystrixCallleeClientApplication.class, args);
