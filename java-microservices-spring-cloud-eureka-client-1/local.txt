@@ -49,3 +49,25 @@
 2018-12-30 00:22:16.851  INFO 14344 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2018-12-30 00:27:16.853  INFO 14344 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2018-12-30 00:32:16.856  INFO 14344 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-12-30 00:37:16.862  INFO 14344 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-12-30 00:42:16.872  INFO 14344 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-12-30 00:47:16.874  INFO 14344 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-12-30 00:52:16.877  INFO 14344 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-12-30 00:57:16.884  INFO 14344 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-12-30 01:02:16.888  INFO 14344 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-12-30 01:07:16.895  INFO 14344 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-12-30 01:12:16.898  INFO 14344 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-12-30 01:17:16.900  INFO 14344 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-12-30 01:22:16.904  INFO 14344 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-12-30 01:27:16.907  INFO 14344 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-12-30 01:31:42.601  INFO 14344 --- [RMI TCP Connection(87)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-12-30 01:31:42.615  INFO 14344 --- [RMI TCP Connection(87)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application EUREKACLIENT1 with eureka with status DOWN
+2018-12-30 01:31:42.615  WARN 14344 --- [RMI TCP Connection(87)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1546155102615, current=DOWN, previous=UP]
+2018-12-30 01:31:42.616  INFO 14344 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKACLIENT1/rbangaru-pk:eurekaClient1:6761: registering service...
+2018-12-30 01:31:42.638  INFO 14344 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKACLIENT1/rbangaru-pk:eurekaClient1:6761 - registration status: 204
+2018-12-30 01:31:42.648  INFO 14344 --- [RMI TCP Connection(87)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-30 01:31:42.658  INFO 14344 --- [RMI TCP Connection(87)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2018-12-30 01:31:45.667  INFO 14344 --- [RMI TCP Connection(87)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2018-12-30 01:31:45.703  INFO 14344 --- [RMI TCP Connection(87)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKACLIENT1/rbangaru-pk:eurekaClient1:6761 - deregister  status: 200
+2018-12-30 01:31:45.728  INFO 14344 --- [RMI TCP Connection(87)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2018-12-30 01:31:45.947  INFO 14344 --- [RMI TCP Connection(87)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]

@@ -9,12 +9,14 @@ import com.netflix.hystrix.contrib.metrics.eventstream.HystrixMetricsStreamServl
 @Configuration
 public class HystrixServletDefinitions {
 
-@Bean(name = "hystrixRegistrationBean")
-public ServletRegistrationBean servletRegistrationBean() {
-    ServletRegistrationBean registration = new ServletRegistrationBean(
-            new HystrixMetricsStreamServlet(), "/hystrix.stream");
-    registration.setName("hystrixServlet");
-    registration.setLoadOnStartup(1);
-    return registration;
-}
+	@SuppressWarnings("rawtypes")
+	@Bean(name = "hystrixRegistrationBean")
+	public ServletRegistrationBean servletRegistrationBean() {
+		@SuppressWarnings({ "rawtypes", "unchecked" })
+		ServletRegistrationBean registration = new ServletRegistrationBean(new HystrixMetricsStreamServlet(),
+				"/hystrix.stream");
+		registration.setName("hystrixServlet");
+		registration.setLoadOnStartup(1);
+		return registration;
+	}
 }
