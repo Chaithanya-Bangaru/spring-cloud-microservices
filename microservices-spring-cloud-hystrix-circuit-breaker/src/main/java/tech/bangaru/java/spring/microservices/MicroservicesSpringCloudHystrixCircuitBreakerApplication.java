@@ -6,8 +6,11 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
+//import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
+import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,9 +19,13 @@ import org.springframework.web.client.RestTemplate;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 
+
+@Controller
 @SpringBootApplication
 @RestController
-@EnableCircuitBreaker
+//@EnableCircuitBreaker
+@EnableHystrix // @EnableCircuitBreaker is included with @EnableHystrix so, commented above annotation
+@EnableHystrixDashboard
 public class MicroservicesSpringCloudHystrixCircuitBreakerApplication {
 	
 	@Autowired
