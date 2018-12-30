@@ -30,6 +30,33 @@ public class MicroservicesSpringCloudHystrixCircuitBreakerApplication {
 		return this.restTemplate = new RestTemplate();
 	}
 
+	/**
+	 * Refer Github Hystrix commands doc here 
+	 * https://github.com/Netflix/Hystrix/wiki/Configuration
+	 * Hystrix Command Properties
+		Execution
+		execution.isolation.strategy
+		execution.isolation.thread.timeoutInMilliseconds
+		execution.timeout.enabled
+		execution.isolation.thread.interruptOnTimeout
+		execution.isolation.thread.interruptOnCancel
+		execution.isolation.semaphore.maxConcurrentRequests
+		Fallback
+		fallback.isolation.semaphore.maxConcurrentRequests
+		fallback.enabled
+		Circuit Breaker
+		circuitBreaker.enabled
+		circuitBreaker.requestVolumeThreshold
+		circuitBreaker.sleepWindowInMilliseconds
+		circuitBreaker.errorThresholdPercentage
+		circuitBreaker.forceOpen
+		circuitBreaker.forceClosed
+		and so forth
+	 * @param time
+	 * @return
+	 * @throws InterruptedException
+	 */
+	@SuppressWarnings("unchecked")
 	@RequestMapping("/startClient")
 	@HystrixCommand(fallbackMethod="hystrixCommandFallback",commandProperties= {
 			@HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "500")
@@ -46,6 +73,5 @@ public class MicroservicesSpringCloudHystrixCircuitBreakerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MicroservicesSpringCloudHystrixCircuitBreakerApplication.class, args);
 	}
-
 }
 
