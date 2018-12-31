@@ -11,7 +11,8 @@ public class MicroservicesSpringCloudZuulClientApplication {
 
 	@RequestMapping("/execute")
 	public String execute() {
-		return "Executed...";
+		System.out.println("In the Zuul proxied and routed microservice ");
+		return "Executed by Zuul Proxy/Edge Service...";
 	}
 	public static void main(String[] args) {
 		SpringApplication.run(MicroservicesSpringCloudZuulClientApplication.class, args);
